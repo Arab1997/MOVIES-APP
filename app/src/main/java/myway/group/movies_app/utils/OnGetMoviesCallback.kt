@@ -1,4 +1,4 @@
-package myway.group.movies_app
+package myway.group.movies_app.utils
 
 import myway.group.movies_app.data.Movie
 

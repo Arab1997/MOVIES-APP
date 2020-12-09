@@ -1,4 +1,4 @@
-package myway.group.movies_app
+package myway.group.movies_app.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import myway.group.movies_app.R
 import myway.group.movies_app.data.Movie
 
 class MoviesAdapter(

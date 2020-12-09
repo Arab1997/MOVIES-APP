@@ -1,7 +1,5 @@
-package myway.group.movies_app
+package myway.group.movies_app.netrowk
 
-import myway.group.movies_app.data.Api
-import myway.group.movies_app.data.GetMoviesResponse
 import myway.group.movies_app.data.Movie
 import retrofit2.Call
 import retrofit2.Callback

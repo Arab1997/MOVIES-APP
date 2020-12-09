@@ -1,4 +1,4 @@
-package myway.group.movies_app
+package myway.group.movies_app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.RatingBar
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import myway.group.movies_app.R
 
 const val MOVIE_BACKDROP = "extra_movie_backdrop"
 const val MOVIE_POSTER = "extra_movie_poster"

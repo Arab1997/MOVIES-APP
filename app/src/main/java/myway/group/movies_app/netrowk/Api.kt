@@ -1,4 +1,4 @@
-package myway.group.movies_app.data
+package myway.group.movies_app.netrowk
 
 import retrofit2.Call
 import retrofit2.http.GET

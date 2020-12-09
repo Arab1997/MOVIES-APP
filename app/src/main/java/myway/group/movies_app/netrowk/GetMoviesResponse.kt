@@ -1,4 +1,4 @@
-package myway.group.movies_app.data
+package myway.group.movies_app.netrowk
 
 import com.google.gson.annotations.SerializedName
 import myway.group.movies_app.data.Movie

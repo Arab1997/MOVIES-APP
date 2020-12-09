@@ -1,4 +1,4 @@
-package myway.group.movies_app
+package myway.group.movies_app.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,10 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import myway.group.movies_app.MoviesRepository.getUpcomingMovies
+import myway.group.movies_app.*
+import myway.group.movies_app.adapter.MoviesAdapter
 import myway.group.movies_app.data.Movie
+import myway.group.movies_app.netrowk.MoviesRepository
 
 class MainActivity : AppCompatActivity() {
 
@@ -66,20 +68,20 @@ class MainActivity : AppCompatActivity() {
 
 // get Popular Movies
     private fun getPopularMovies() {
-        MoviesRepository.getPopularMovies(
-            popularMoviesPage,
-            ::onPopularMoviesFetched,
-            ::onError
-        )
+    MoviesRepository.getPopularMovies(
+        popularMoviesPage,
+        ::onPopularMoviesFetched,
+        ::onError
+    )
     }
 
    // get Top Rated Movies
     private fun getTopRatedMovies() {
-        MoviesRepository.getTopRatedMovies(
-            topRatedMoviesPage,
-            ::onTopRatedMoviesFetched,
-            ::onError
-        )
+       MoviesRepository.getTopRatedMovies(
+           topRatedMoviesPage,
+           ::onTopRatedMoviesFetched,
+           ::onError
+       )
     }
     // get Popular Movies
     private fun attachPopularMoviesOnScrollListener() {
